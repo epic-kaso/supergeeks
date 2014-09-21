@@ -180,8 +180,11 @@
                 <div class="col-sm-6">
                     <div class="pull-right">
                         <ul class="supergeeks-social-icons">
-                           <li><a href="#"><span class="glyphicon glyphicon-phone"></span></a></li>
-                           <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+                           <li><a
+                           href="#contact-info-dialog" data-toggle="modal">
+                           <span class="glyphicon glyphicon-earphone"></span></a></li>
+                           <li><a href="#contact-info-dialog" data-toggle="modal">
+                           <span class="glyphicon glyphicon-envelope"></span></a></li>
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
                             <li><a href="https://twitter.com/TeamSuperGeeks" title="Supergeeks on Twitter"><span
                                                         class="icon-twitter"></span></a></li>
@@ -289,68 +292,99 @@
         </div>
 
     </div>
-
-    <footer class="footer">
-        <div class="row">
-            <div class="col-sm-6 col-lg-8">
-                <div class="row">
-                    <ul class="col-lg-3">
-                        <li><strong>Services</strong></li>
-                        <li><a href="/tech-support">Tech Support</a></li>
-                        <li><a href="/fix-and-repairs">Repairs</a></li>
-                    </ul>
-
-                    <ul class="col-lg-3">
-                        <li><strong>SuperGeeks</strong></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-
-                    <ul class="col-lg-3">
-                        <li><a href="/why-choose-us">Why Choose Us</a></li>
-                        <li><a href="/safety-and-security">Safety &amp; Security</a></li>
-                    </ul>
-
-                    <ul class="col-lg-3">
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/terms-and-conditions">Terms &amp; Condition</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <ul class="col-sm-6 col-lg-4 social-icons pull-right">
-                <li><strong>Connect with us</strong></li>
-                <li>
-                    <a href="https://twitter.com/TeamSuperGeeks" title="Supergeeks on Twitter"><span
-                            class="icon-twitter"></span></a>
-                    <a href="https://www.facebook.com/SuperGeeksAfrica" title="Supergeeks on facebook"><span
-                            class="icon-facebook"></span></a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="copyright row">
-            <div class="medium-12">
-                &copy; 2014 SuperGeeks Ltd. All Rights Reserved.
-            </div>
-        </div>
-
-    <div id="gadget-repair-quote" class="modal fade" role="modal">
-        <div class="modal-dialog">
-            <div class="modal-content col-sm-12">
-                <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                </div>
-                <div class="modal-body ">
-                    <script
-                    src='http://supergeeks.repairshopr.com/device_repairs/includr.js?height=800&width=960&scrolling=no'>
-                    </script>
-               </div>
-            </div>
-        </div>
-    </div>
-    </footer>
-
 </div>
+ <div class="footer-row">
+     <div class="container">
+        <footer class="footer">
+                    <div class="row">
+                        <div class="col-sm-9 col-lg-9">
+                            <div class="row">
+                                <ul class="col-sm-4 col-lg-4">
+                                    <li><strong>Services</strong></li>
+                                    <li><a href="/tech-support">Tech Support</a></li>
+                                    <li><a href="/fix-and-repairs">Repairs</a></li>
+                                </ul>
+
+                                <ul class="col-sm-4 col-lg-4">
+                                    <li><strong>SuperGeeks</strong></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/why-choose-us">Why Choose Us</a></li>
+                                    <li><a href="/safety-and-security">Safety &amp; Security</a></li>
+                                     <li><a href="/privacy-policy">Privacy Policy</a></li>
+                                     <li><a href="/terms-and-conditions">Terms &amp; Condition</a></li>
+                                 </ul>
+                                 <ul class="col-sm-4 col-lg-4">
+                                     <li><strong>Support</strong></li>
+                                     <li><a href="/tech-support">Tech Support</a></li>
+                                     <li><a href="/fix-and-repairs">Repairs</a></li>
+                                 </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <ul class="social-icons pull-right">
+                                <li><strong>Connect with us</strong></li>
+                                <li>
+                                    <a href="https://twitter.com/TeamSuperGeeks" title="Supergeeks on Twitter"><span
+                                            class="icon-twitter"></span></a>
+                                    <a href="https://www.facebook.com/SuperGeeksAfrica" title="Supergeeks on facebook"><span
+                                            class="icon-facebook"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="copyright row">
+                        <div class="medium-12">
+                            &copy; 2014 SuperGeeks Ltd. All Rights Reserved.
+                        </div>
+                    </div>
+                </footer>
+
+     </div>
+   </div>
+
+   <div id="gadget-repair-quote" class="modal fade" role="modal">
+       <div class="modal-dialog">
+           <div class="modal-content col-sm-12">
+               <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="modal-title">Quick Repair Quote</div>
+               </div>
+               <div class="modal-body">
+                   <script
+                   src='http://supergeeks.repairshopr.com/device_repairs/includr.js?height=800&width=960&scrolling=no'>
+                   </script>
+              </div>
+           </div>
+       </div>
+   </div>
+
+   <div id="contact-info-dialog" class="modal fade" role="modal">
+       <div class="modal-dialog">
+           <div class="modal-content col-sm-12">
+               <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <div class="modal-title"><h1>Hey, We're here for you</h1></div>
+               </div>
+               <div class="modal-body">
+                    <ul class="list-unstyled contact-details">
+                        <li>
+                            <span class="glyphicon glyphicon-earphone contact-icon"></span>
+                            <span>Talk to a real Person! <a href="tel://+2348150924335" class="phone-number">0815 092 GEEK (4335)</a></span>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-pencil contact-icon"></span>
+                            <span> <a href="tel://+2348150924335" class="phone-number">Chat with a Real Person</a></span>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-envelope contact-icon"></span>
+                            <span><a href="tel://+2348150924335" class="phone-number">Email a Real Person</a></span>
+                        </li>
+                    </ul>
+              </div>
+           </div>
+       </div>
+   </div>
 </body>
 </html>

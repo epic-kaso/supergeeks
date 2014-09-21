@@ -1,6 +1,5 @@
 /*
   General Styles */
-
 @font-face {
     font-family: "DINNextMedium";
     src: url('../fonts/dinnextltpro-medium-webfont.eot');
@@ -50,6 +49,7 @@
 body{
     font-family: "Roboto Slab",DINNextMedium,Verdana,Arial,Helvetica,sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-shadow: none;
 }
 @media (min-width: 1200px) {
     .container {
@@ -151,7 +151,7 @@ div.social-bar ul.supergeeks-social-icons > li > a{
 
     .nav > li > a {
         color: rgba(0,0,0,.7);
-        font-weight: 600;
+        font-weight: 500;
         padding-top: 10px;
         padding-bottom: 37px;
         transition: all .5s;
@@ -373,7 +373,7 @@ div.social-bar ul.supergeeks-social-icons > li > a{
     .my-pull-right{
         float: right !important;
     }
-    .modal-content{
+    div#gadget-repair-quote .modal-content{
         width: 690px !important;
         height: 600px;
     }
@@ -382,4 +382,32 @@ div.social-bar ul.supergeeks-social-icons > li > a{
 .modal-body iframe{
     position: relative;
     left: -170px;
+}
+
+.footer-row{
+    font-weight: 300;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div#contact-info-dialog{
+    height: auto;
+}
+div#contact-info-dialog ul.contact-details li{
+    font-weight: 300;
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+
+div#contact-info-dialog ul.contact-details li span.contact-icon{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+div#contact-info-dialog ul.contact-details li a{
+    color: #0087cf;
+    text-decoration: none;
 }
