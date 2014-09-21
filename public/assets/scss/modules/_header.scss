@@ -1,0 +1,60 @@
+.header-container {
+	background-color: $white;
+	padding-top: rem-calc(30);
+	padding-bottom: rem-calc(30);
+	border-bottom: 1px solid lighten($gray, 40%);
+}
+.header {
+	background-color: $white;
+}
+.SGLogo {
+	text-align: center; 
+
+	h1, h2 {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		line-height: 0;
+	}
+}
+.SGNav {
+	text-align: center;
+	padding-right: 0 !important;
+
+	@media #{$large-up} {
+		text-align: right;
+	}
+
+	ul {
+		float: right;
+	}
+
+	li {
+		display: inline;
+		font-size: rem-calc(20);
+		//border-right: 1px solid lighten($gray, 45%);
+		padding: rem-calc(10) rem-calc(15);
+
+		&:last-child {
+			padding-right: 0;
+			border-right: none;
+		}
+
+		a {
+			color: lighten($gray, 20%);
+			
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+}
+.quick-contact {
+	text-align: right;
+	padding-right: 0;
+
+	h1,h2,h3,h4,h5,h6 {
+		display: inline;
+		color: lighten($gray, 30%);
+	}
+}

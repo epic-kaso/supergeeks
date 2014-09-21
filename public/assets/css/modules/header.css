@@ -1,0 +1,5 @@
+/* line 2, ../../scss/modules/header.scss */
+.SGLogo h1, .SGLogo h2 {
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,103 @@
+//Reset Stylesheets
+@import "compass/reset";
+
+
+//Include some basic modules
+@import "modules/color";
+@import "modules/type";
+
+//Fonts
+@import "modules/fonts";
+
+//Foundation Settings
+@import "settings";
+//@import "foundation";
+
+// Include some foundation components
+@import "foundation/components/block-grid";
+@import "foundation/components/buttons";
+@import "foundation/components/clearing";
+@import "foundation/components/forms";
+@import "foundation/components/grid";
+@import "foundation/components/inline-lists";
+@import "foundation/components/tables";
+@import "foundation/components/clearing";
+@import "foundation/components/type";
+@import "foundation/components/pricing-tables";
+
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+//Include more basic modules
+@import "modules/header";
+@import "modules/homebanners";
+@import "modules/panels";
+@import "modules/footer";
+@import "modules/main";
+
+body {
+	background-color: lighten($gray, 55%);
+}
+
+.SGSlogan {
+	color: $gray;
+	margin: rem-calc(20) auto;
+	font-weight: normal;
+	text-align: center;
+
+	@media #{$large-up} {
+		padding-left: 0;
+		text-align: left;
+	}
+}
+.quick-quote {
+	float: right !important;
+	text-align: center;
+
+	@media #{$large-up} {
+		padding-right: 0;
+		text-align: right;
+	}
+}
+.SGPHome {
+	@media #{$large-up} {
+		margin-top: rem-calc(-60);
+		margin-bottom: rem-calc(-50);
+	}
+}

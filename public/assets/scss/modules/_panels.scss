@@ -1,0 +1,56 @@
+.homeinfopanel {
+	background-color: $primary;
+	padding: rem-calc(20);
+	color: $white;
+	border-radius: rem-calc(10);
+	margin-top: rem-calc(20);
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $white;
+	}
+
+	@media #{$small-only} {
+		text-align: center;
+
+		img {
+			max-width: 60%;
+		}
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover {
+			color: lighten($primary, 30%);
+		}
+	}
+}
+.dPanels {
+	float: left;
+	margin-bottom: rem-calc(40) !important;
+	clear: both;
+}
+.dPanel {
+	border: 1px solid lighten($gray, 50%);
+	border-radius: rem-calc(3);
+	border-bottom: 5px solid $primary;
+	padding: rem-calc(40) !important;
+
+	.dPanel_title{
+		text-align: center;
+		font-size: rem-calc(20);
+		color: $primary;
+	}
+
+	.dPanel_icon{
+		text-align: center;
+		float: none;
+		padding-top: rem-calc(20);
+		padding-bottom: rem-calc(20);
+	}
+
+	li {
+		list-style-image: image-url("arrow.png");
+	}
+}

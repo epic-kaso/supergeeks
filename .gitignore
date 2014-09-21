@@ -1,0 +1,9 @@
+# Created by .gitignore support plugin (hsz.mobi)
+.idea
+_ide_helper.php
+vendor
+node_modules
+gulpfile.js
+package.json
+.env.local.php
+.env.php

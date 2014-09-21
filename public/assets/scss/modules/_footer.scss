@@ -1,0 +1,62 @@
+.footer {
+	background: image-url("supergeeks-mascot-bg.png") no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: rem-calc(350);
+	width: 100%;
+	margin-top: rem-calc(50);
+	color: lighten($gray, 20%);
+
+	@media #{$small-only} {
+		background-size: 200%;
+		padding-bottom: rem-calc(190);
+		padding-left: rem-calc(20);
+		padding-right: rem-calc(20);
+	}
+
+	@media #{$medium-only}{
+		background-size: 150%;
+		padding-bottom: rem-calc(250);
+		padding-left: rem-calc(20);
+		padding-right: rem-calc(20);
+	}
+
+	a {
+		color: lighten($gray, 20%);
+
+		&:hover {
+			color: $primary;
+		}
+	}
+
+	ul {
+		font-size: rem-calc(14);
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.slogan {
+		color: lighten($primary, 20%);
+		margin-bottom: rem-calc(20);
+		padding-bottom: rem-calc(20);
+		border-bottom: 1px solid lighten($gray, 50%);
+	}
+
+	.social-icons {
+		text-align: right;
+		padding-right: 0;
+	}
+
+	[class^="icon-"] {
+		font-size: rem-calc(35);
+		float: right;
+		margin-top: rem-calc(10);
+		margin-left: rem-calc(20);
+	}
+
+	.copyright {
+		border-top: 1px solid lighten($gray, 50%);
+		padding-top: rem-calc(20);
+		margin-top: rem-calc(20);
+	}
+}
